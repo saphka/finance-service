@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1.0.0_budged_plan
+      author: saphka
+      changes:
+        - createTable:
+            tableName: budget_plan
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: description
+                  type: varchar(500)
+                  constraints:
+                    nullable: false

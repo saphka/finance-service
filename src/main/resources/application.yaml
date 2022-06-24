@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: finance-service
+  liquibase:
+    url: jdbc:postgresql://localhost:5432/finance
+    user: ${spring.r2dbc.username}
+    password: ${spring.r2dbc.password}
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/finance
+    username: postgres
+    password: postgres
