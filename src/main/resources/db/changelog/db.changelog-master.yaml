@@ -2,3 +2,6 @@ databaseChangeLog:
   - include:
       file: "1.0.0_budged_plan.yaml"
       relativeToChangelogFile: true
+  - include:
+      file: "1.0.0_user.yaml"
+      relativeToChangelogFile: true
